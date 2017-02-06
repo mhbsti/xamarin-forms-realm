@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             xmlns:local="clr-namespace:ClienteXna"
+             x:Class="ClienteXna.MainPage"
+             Title="Clientes XNA">
+
+  <Label Text="Usando Realm!!!!" FontSize="20" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+  <Grid Padding="10">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Button Text="Novo Cliente"   Command="{Binding CadastroCommand}" Grid.Column="0" VerticalOptions="End"/>
+    <Button Text="Lista de Clientes" Command="{Binding ListagemCommand}" Grid.Column="1" VerticalOptions="End"/>
+  </Grid>
+
+</ContentPage>
